@@ -1,0 +1,335 @@
+/* Styling af navbar */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF6EE;
+  background-position: center;
+}
+
+/* nu vil jeg style min header / navbar */
+
+.menubar {
+    text-align: center;
+    background-color: #f4f2ef;
+}
+
+.menubar ul {
+    display:inline-flex;
+    color:#2519b2;
+}
+
+.menubar ul li {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;  
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menubar ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li a:hover {
+    transform: scale(1.1);
+}
+
+
+.menubar ul li a {
+    text-decoration: none;
+    color:#2519b2;
+}
+
+.submenu {
+    display: none;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position:absolute;
+    background-color: #f4f2ef;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #2519b2;
+    border-radius: 0;
+    text-align: left;
+    background: transparent;
+}
+
+.menubar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li:hover .submenu ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+    color: #94b6ef;
+}
+
+.submenu2 {
+    display: none;
+}
+
+.hoverme:hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color:#f4f2ef;
+}
+
+/* Styling af logo i navbar */
+  
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-top: -25px;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+    
+  /* Styling af streg */
+  hr {
+    border: none; 
+    height: 1px; 
+    background-color:#94b6ef; 
+    margin: 0; 
+  }
+  
+  /* Styling af h1 */
+  h1 {
+    text-align: center;
+    color:#2e2212;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size:50px
+  }
+  
+  /* Styling af container */
+  .container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+  /* Styling af billede - cardigan */
+  .cardigan {
+    width: 350px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  
+  /* Styling af h2 */
+  h2 {
+    color: #2519b2;
+    font-size: 12px;
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    margin-left: 470px;
+    margin-bottom: 160px;
+    margin-top: 100px;
+  }
+  
+  /* Stylind af body */
+  body {
+    background-color: #f4f2ef;
+    color: #2e2212;
+    font-size: 15px;
+  }
+  
+  /* Styling af h3 */
+  h3 {
+    font-weight: bold;
+    width: 35%;
+    margin-left: 470px;
+    margin-top: 1px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  
+  /* Styling af container_closeup */
+  .container_closeup {
+    position: relative;
+  }
+  
+  .text {
+    position: absolute;
+    width: 20%;
+    margin-top: 180px;
+    margin-left: 400px;
+    text-align: justify;
+    font-size: 12px;
+    width: 250px;
+  }
+  
+  .text_closeup {
+    position: absolute;
+    width: 20%;
+    margin-top: 190px;
+    text-align: justify;
+    font-size: 12px;
+    left: 200px;
+    width: 250px;
+  }
+  
+  /* .streg {
+    position: absolute;
+    width: 30%;
+    left: 750px;
+    top: 90px;
+    width: 350px;
+    height: autopx;
+  }
+  
+  .streg_2 {
+    position: absolute;
+    width: 30%;
+    left: 350px;
+    top: 90px;
+    width: 350px;
+    height: auto;
+  } */
+  
+  /* Styling af paragraf */
+  p {
+    width: 18%;
+    margin-top: 200px;
+    margin-left: 600px;
+    text-align: justify;
+    font-size: 12px;
+  }
+  
+  /* Styling af container_billeder */
+  .container_billeder {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skjorte {
+    position: absolute;
+    top: 400px;
+    left: 940px;
+    width: 300px;
+    height: auto;
+  }
+  
+  .rangle {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    width: 300px;
+    height: auto;
+  }
+  
+  .seng {
+    position: absolute;
+    top: 400px;
+    left: 260px;
+    width: 300px;
+    height: auto;
+  }
+  
+  .inspiration {
+    position: absolute;
+    top: 560px;
+    left: 45px;
+    width: 300px;
+    height: auto;
+  }
+  /* Styling af h4 */
+  h4 {
+    color: #2519b2;
+    font-size: 50px;
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    margin-left: 150px;
+    margin-bottom: 80px;
+  }
+  
+  /* Styling af den nederste streg */
+  .nederst {
+    border: none; 
+    height: 1px; 
+    background-color:#2e2212; 
+    margin: 0; 
+    margin-bottom: 5px;
+    margin-top: 800px;
+  }
+  
+  /* Styling af footer */
+  .footer {
+    background-color:#94b6ef;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Styling af socials */
+  .footer, .socials {
+    padding: 5px;
+    color: #2e2212;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .socials a {
+      font-size: 19px;
+      color: inherit;
+      line-height: 38px;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 0 20px;
+      opacity: 0.8; 
+  }
+  
+  /* Styling af icornerne, når hoveren er over */
+  .socials a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  /* Styling af ul */
+  .footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer ul li a {
+    color: #2e2212;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    opacity: 0.7;
+  }
+  
+  .footer ul li a:hover {
+    opacity: 1;
+  }
+  
+  .info {
+    display: inline;
+  }

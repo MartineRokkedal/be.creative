@@ -1,0 +1,289 @@
+/* Styling af navbar */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF6EE;
+  background-position: center;
+}
+
+/* nu vil jeg style min header / navbar */
+
+.menubar {
+    text-align: center;
+    background-color: #f4f2ef;
+}
+
+.menubar ul {
+    display:inline-flex;
+    color:#2519b2;
+}
+
+.menubar ul li {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;  
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menubar ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li a:hover {
+    transform: scale(1.1);
+}
+
+
+.menubar ul li a {
+    text-decoration: none;
+    color:#2519b2;
+}
+
+.submenu {
+    display: none;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position:absolute;
+    background-color: #f4f2ef;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #2519b2;
+    border-radius: 0;
+    text-align: left;
+    background: transparent;
+}
+
+.menubar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li:hover .submenu ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+    color: #94b6ef;
+}
+
+.submenu2 {
+    display: none;
+}
+
+.hoverme:hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color:#f4f2ef;
+}
+
+/* Styling af logo i navbar */
+  
+.logo img {
+  width: 200px;
+  height: auto;
+  margin-top: -25px;
+}
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+
+/* Styling af streg */
+hr {
+  border: none; 
+  height: 1px; 
+  background-color:#94b6ef; 
+  margin: 0; 
+}
+
+/* Styling af body */
+.design {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+body {
+  background-color: #f4f2ef;
+  font-size: 15px;
+  color: #94b6ef;
+  font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Styling af h1 */
+h1 {
+  color: #2e2212;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace ;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Styling af h2 */
+h2 {
+  color: #2519b2;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling af kolonner */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  color: #2e2212;
+  line-height: 1.8;
+  text-align:justify;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.kolonne {
+flex: 1;
+margin: 10px;
+max-width: 300px;
+}
+
+
+/* Styling af h3-h6 */
+h3, h4, h5, h6 {
+  font-size: 15px;
+  color: #2519b2;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling af billeder */
+.billede_container {
+position: relative;
+width: 600px;
+height: 400px;
+}
+
+.seng {
+position: absolute;
+top: 20px;
+left: 300px;
+width: 300px;
+height: auto;
+}
+
+.baby {
+position: absolute;
+top: 20px;
+left: 620px;
+width: 150px;
+height: auto;
+}
+
+.rum {
+position: absolute;
+top: 20px;
+left: 836px;
+width: 300px;
+height: auto;
+}
+
+.klud {
+position: absolute;
+top: 270px;
+left: 620px;
+width: 200px;
+height: auto;
+}
+
+.streg {
+position: absolute;
+top: 20px;
+left: 600px;
+width: 250px;
+height: auto;
+}
+
+
+/* Styling af den nederste streg */
+.nederst {
+border: none; 
+height: 1px; 
+background-color:#2e2212; 
+margin: 0; 
+margin-bottom: 5px;
+margin-top: 60px;
+}
+
+/* Styling af footer */
+.footer {
+background-color:#94b6ef;
+width: 100%;
+margin: 0;
+}
+
+/* Styling af socials */
+.footer, .socials {
+padding: 5px;
+color: #2e2212;
+display: flex;
+justify-content: space-between;
+}
+
+.socials a {
+  font-size: 19px;
+  color: inherit;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 20px;
+  opacity: 0.8; 
+}
+
+/* Styling af icornerne, når hoveren er over */
+.socials a:hover {
+opacity: 1;
+transform: scale(1.1);
+}
+
+/* Styling af ul */
+.footer ul {
+margin-top: 0;
+padding: 0;
+list-style: none;
+font-size: 12px;
+line-height: 1.6;
+margin-bottom: 0;
+}
+
+.footer ul li a {
+color: #2e2212;
+text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times, sans-serif;
+opacity: 0.7;
+}
+
+.footer ul li a:hover {
+opacity: 1;
+}
+
+.info {
+display: inline;
+}
